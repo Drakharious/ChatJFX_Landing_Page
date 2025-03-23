@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ParticlesLayout from "./components/ParticlesLayout";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -10,7 +10,7 @@ import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         {/* Rutas con fondo de partículas */}
@@ -21,7 +21,7 @@ function App() {
         {/* Rutas sin el fondo de partículas */}
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
